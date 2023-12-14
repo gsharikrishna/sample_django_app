@@ -8,7 +8,6 @@ WORKDIR /app
 
 # Copy only the necessary files
 COPY ./demo /app/demo
-COPY ./myapp /app/myapp
 COPY ./Dockerfile /app/Dockerfile
 COPY ./requirements.txt /app/requirements.txt
 
