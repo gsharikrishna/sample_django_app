@@ -14,6 +14,7 @@ COPY ./requirements.txt /app/requirements.txt
 # Install project dependencies
 RUN pip install -r requirements.txt
 RUN pip install --upgrade pip
+RUN pip install joblib
 
 # Define the command to run your application
 CMD ["python", "demo/manage.py", "runserver", "0.0.0.0:8000"]
