@@ -10,6 +10,7 @@ WORKDIR /app
 COPY ./demo /app/demo
 COPY ./Dockerfile /app/Dockerfile
 COPY ./requirements.txt /app/requirements.txt
+COPY ./finalised_model.sav /app/finalised_model
 
 # Install project dependencies
 RUN pip install -r requirements.txt
